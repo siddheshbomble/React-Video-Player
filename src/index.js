@@ -13,7 +13,8 @@ class App extends React.Component{
 		this.state = {videos:[]};
 
 		YTSearch({key: API_KEY, term: 'surfboards'},
-		(videos) => {this.setState({videos})});
+			(videos) => {this.setState({videos})}
+		);
 	}
 	render(){
 		return(
@@ -25,4 +26,4 @@ class App extends React.Component{
 	};
 }
 
-render(<App />,document.querySelector('#main'));
+render(<App/>,document.querySelector('#main'));
