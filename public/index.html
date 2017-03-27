@@ -21,11 +21,28 @@
       height: 100%;
     }
 
+    .container{
+      display: flex;
+      flex-flow: row nowrap;
+    }
+
+    .search-bar{
+      flex: 0 1 100%;
+    }
+
+    .video-detail{
+      flex: 0 1 60%;
+      display: flex;
+      justify-content: center;
+    }
+
 
     .list-group{
+      flex: 0 1 40%;
       display: flex;
-      height: 80%;
-      padding:20px;
+      height: 100%;
+      margin:0;
+      padding:0;
       list-style: none;
       flex-flow: row wrap;
       justify-content: center;
@@ -38,6 +55,11 @@
       display: flex;
       justify-content: center;
       flex-flow: row wrap;
+      cursor: pointer;
+    }
+
+    .list-group-item:hover{
+      background: rgba(255,0,0,0.3);
     }
 
     .video-list-media{
@@ -61,15 +83,6 @@
     .media-heading{
       font-family: "helvetica neue";
       flex: 0 1 100%;
-    }
-
-    .video-detail{
-      display: flex;
-      justify-content: center;
-    }
-
-    .embed-responsive{
-      width: 60%;
     }
 
     input[type^="text"]{
